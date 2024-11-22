@@ -9,7 +9,7 @@ import { SearchInput } from "./search-input";
 export const NavbarRoutes = () => {
   const pathName = usePathname();
   const isTeacherPage = pathName.startsWith("/teacher");
-  const isPlayerPage = pathName.startsWith("/chapter");
+  const isPlayerPage = pathName.includes("/chapters");
   const isSearchPage = pathName === "/search";
   return (
     <>
